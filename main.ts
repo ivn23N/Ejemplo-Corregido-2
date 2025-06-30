@@ -8,7 +8,8 @@ import { MongoClient, Collection } from "mongodb";
 import { ContactModel } from "./type.ts";
 
 // ------- variables de entorno -------
-const MONGO_URL = Deno.env.get("MONGO_URL");
+//const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = "mongodb+srv://igarciadiegoc:12345@nebrijaclusterivn.e0n3s.mongodb.net/?retryWrites=true&w=majority&appName=NebrijaClusterIvn"
 if (!MONGO_URL) throw new Error("Please provide a MONGO_URL");
 
 // ------- conexión MongoDB -------
